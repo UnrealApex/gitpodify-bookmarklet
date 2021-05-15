@@ -1,7 +1,8 @@
 var darkMode = false;
-var runCount = 0;
+// how many times our onclick function has been called
+var callCount = 0;
 function changeTheme() {
-  runCount += 1;
+  callCount += 1;
   if (darkMode == false) {
     document.getElementById("body").style.color = "white";
     document.body.style.backgroundColor = "black";
@@ -28,13 +29,13 @@ function changeTheme() {
 
   // }
 
+  // the window is reloaded after 3 runs of the onclick function,
+  // this is done because after more than executions of the onclick function 
+  // it sees to not execute when clicked, this is solved by reloading the page 
+  // therefore reseting the onclick count
   
-  // if (runCount >= 3) {
-  //   // the window is reloaded after 3 runs of the onclick function,
-  //   // this is done because after more than executions of the onclick function 
-  //   // it sees to not execute when clicked, this is solved by reloading the page 
-  //   // therefore reseting the onclick count
-
-  //   location.reload();
-  // }
+  if (callCount >= 3) {
+    location.reload();
+    
+   }
 }
