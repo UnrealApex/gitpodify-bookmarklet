@@ -1,13 +1,14 @@
 var darkMode = false;
-function changeTheme() {
+function toggleDarkMode() {
   if (darkMode == false) {
-    // TODO: make "Open in Gitpod" image switch to dark theme with site
-    document.getElementById("body").style.color = "white";
-    document.body.style.backgroundColor = "black";
+    // TODO: Make "Open in Gitpod" image switch to dark theme with site
+    // TODO: Make dark theme more appealing
+    document.getElementById("body").style.color = "#FFFFFF";
+    document.body.style.backgroundColor = "#121212";
     darkMode = true;
   } else if (darkMode == true) {
     document.getElementById("body").style.color = "black";
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "#FFFFFF";
     darkMode = false;
   } else {
     console.log("Failed to change theme");
