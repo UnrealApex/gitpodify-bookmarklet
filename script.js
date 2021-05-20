@@ -1,3 +1,4 @@
+// TODO: Dark mode is default
 var darkMode = false;
 function toggleDarkMode() {
   if (darkMode == false) {
