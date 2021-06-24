@@ -1,17 +1,17 @@
-var darkMode = false;
+var isDarkMode = false;
 function toggleDarkMode() {
-    if (darkMode == false) {
+    if (!isDarkMode) {
         // TODO: Make "Open in Gitpod" image switch to dark theme with site
         // TODO: Make dark theme more appealing
         document.body.style.color = "#00ff00";
         document.body.style.backgroundColor = "#121212";
-        darkMode = true;
-    } else if (darkMode == true) {
+        isDarkMode = true;
+    } else if (isDarkMode) {
         document.body.style.color = "black";
         document.body.style.backgroundColor = "#FFFFFF";
-        darkMode = false;
+        isDarkMode = false;
     } else {
         console.log("Failed to change theme");
-        darkMode = Boolean(Math.random() < 0.5);
+        isDarkMode = Boolean(Math.random() < 0.5);
     }
 }
