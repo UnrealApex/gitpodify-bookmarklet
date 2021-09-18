@@ -1,18 +1,29 @@
 /* TODO: Position dark mode button
-   TODO: Style website and add font */
 
 /* button {
   position: relative;
   right: auto;
 }
-
-div {
-} */
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-* {
+:root {
     font-family: 'Roboto Mono', monospace;
+    --light-bg: white;
+    --dark-bg: #121212;
+    --light-font-color: #121212;
+    --dark-font-color: #00ff00;
+}
+
+.light-mode {
+  color: var(--light-font-color);
+  background: var(--light-bg);
+}
+
+.dark-mode {
+  color: var(--dark-font-color);
+  background: var(--dark-bg);
 }
 
 .material-icons-round {
