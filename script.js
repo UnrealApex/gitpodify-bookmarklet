@@ -11,7 +11,7 @@ function toggleDarkMode() {
         document.body.style.backgroundColor = "#FFFFFF";
         isDarkMode = false;
     } else {
-        console.log("Failed to change theme");
+        console.error("Failed to change theme");
         isDarkMode = Boolean(Math.random() < 0.5);
     }
 }
