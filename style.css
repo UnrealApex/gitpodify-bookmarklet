@@ -29,3 +29,18 @@
 .material-icons-round {
   color: grey;
 }
+
+.bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
