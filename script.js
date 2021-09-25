@@ -1,4 +1,4 @@
-function toggleDarkMode() {
+function toggleTheme() {
     if (document.body.classList.contains("light-mode")) {
         document.body.classList.remove("light-mode");
         document.body.classList.add("dark-mode");
