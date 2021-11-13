@@ -20,30 +20,16 @@
         <h1>Gitpodify</h1>
         <p>
             A handy bookmarklet to quickly open a GitHub, GitLab, or Bitbucket
-            repository in a containerized environment.
+            repository in Gitpod.
         </p>
-        <h3>What is Gitpod?</h3>
-        <p>
-            <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> is an open source platform for automated and
-            ready-to-code
-            development environments that blends into your existing workflow. It
-            enables developers to describe their dev environment as code and start
-            instant and fresh development environments for each new task directly from
-            your browser. For more information check out the
-            <a href="https://www.gitpod.io/docs" target="_blank">Gitpod docs</a>.
-        </p>
-        <h3>Why did I create this?</h3>
-        <p>I created this bookmarket because I believed the <a href="https://www.gitpod.io/docs/browser-extension/"
-                target="_blank">Gitpod browser extension</a> wasn't practical because the same result could be achieved
-            using a bookmarklet with no installation necessary.</p>
         <h3>Getting Started</h3>
         <p>
         <ol>
             <!-- TODO: add onclick copy here-->
-            <li>To get started using Gitpodify, drag this image to your bookmarks bar.
+            <li>To use the bookmarklet, drag this image to your bookmarks bar.
                 <p>
                     <a
-                        href='javascript:(function(){var repoURL = window.location.href; window.open("https://gitpod.io/#" + repoURL, "_blank"); window.focus();})();'>
+                        href='javascript:(function(){var repoURL =window.location.href;if(repoURL.includes("github.com")||repoURL.includes("gitlab.com")||repoURL.includes("bitbucket.org")){window.open("https://gitpod.io/#"+repoURL,"_blank"); window.focus();}else{alert("Gitpod only works with GitHub, Bitbucket, and Gitlab URLs")}})();'>
                         <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod"
                             title="Drag me to the bookmarks bar"></a></a>
             </li>
@@ -52,30 +38,11 @@
                 and
                 click the bookmarklet.
                 <p>
-                    notes: if you execute this bookmarlet with any other website you will get a cannot parse error from
-                    Gitpod.
-                    if this is the first time you are doing this, you will be prompted to log in.
-                </p>
-            </li>
-            <li>
-                It should take about a minute for the environment to load. Once its done, congratulations! you've opened
-                a repo with Gitpod using the Gitpodify.
-            </li>
-            <li>Now you can contribute to open source right from the browser</li>
         </ol>
     </div>
-    <sub>I am not affiliated with Gitpod</sub>
+  <p><strong>Note that using this bookmarklet creates a new workspace each time you use it for a respository</strong></p>
+    <p id="disclaimer">I am not affiliated with Gitpod</p>
     <br>
-    <span>
-        <a href="https://github.com/UnrealApex/gitpodify-bookmarklet" target="_blank"
-            title="Contribute to GitPodify">Contribute on
-            GitHub</a>
-        &nbsp;
-        <a href="https://github.com/gitpod-io" target="_blank" title="Contribute to Gitpod">Contribute to Gitpod</a>
-        &nbsp;
-        <a href="https://github.com/UnrealApex/gitpodify-bookmarklet/issues" target="_blank"
-            title="Submit an issue on GitHub">Submit an issue on GitHub</a>
-    </span>
     <div>
         <br>
       <div class="bottom-right">

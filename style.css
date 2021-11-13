@@ -44,3 +44,7 @@ button {
     overflow: hidden;
     outline: none;
 }
+
+#disclaimer {
+  font-size: 0.5rem;
+}
