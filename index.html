@@ -29,6 +29,7 @@
             <li>To use the bookmarklet, drag this image to your bookmarks bar.
                 <p>
                     <a
+                        id="badge"
                         href='javascript:(function(){var repoURL =window.location.href;if(repoURL.includes("github.com")||repoURL.includes("gitlab.com")||repoURL.includes("bitbucket.org")){window.open("https://gitpod.io/#"+repoURL,"_blank"); window.focus();}else{alert("Gitpod only works with GitHub, Bitbucket, and Gitlab URLs")}})();'>
                         <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod"
                             title="Drag me to the bookmarks bar"></a></a>
